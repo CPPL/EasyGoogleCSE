@@ -2,12 +2,12 @@
 <extension version="3.0" type="module" client="site" method="upgrade">
     <name>MOD_EASYGOOGLECSE_XML_NAME</name>
     <author>Craig Phillips</author>
-    <creationDate>23-Jul-2015</creationDate>
+    <creationDate>##CREATEDATE##</creationDate>
     <copyright>Copyright © 2015 Craig Phillips Pty Ltd. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <authorEmail>support@craigphillips.biz</authorEmail>
     <authorUrl>http://seepeoplesoftware.com</authorUrl>
-    <version>#VER# (#buildno#)</version>
+    <version>##VER## (##COMHASH##)</version>
     <description>MOD_EASYGOOGLECSE_XML_DESCRIPTION</description>
     <files>
         <filename module="mod_easygooglecse">mod_easygooglecse.php</filename>
