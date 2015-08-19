@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="EasyTable Pro" default="package" basedir="_Source" >
+<project name="EasyGoogleCSE" default="package" basedir="./" >
     <property name="name" value="easygooglecse" />
     <property name="type" value="mod" />
     <property name="extension" value="${type}_${name}" />
     <property name="repo" value="./${extension}" />
-    <property name="devBuildsDir" value="../_Dev_Builds" override="true" />
+    <property name="devBuildsDir" value="_Dev_Builds" override="true" />
 
     <!-- get our start time -->
     <exec command='date +"%H:%M:%S"'
