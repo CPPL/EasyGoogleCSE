@@ -4,7 +4,7 @@
     <author>Craig Phillips</author>
     <creationDate>##CREATEDATE##</creationDate>
     <copyright>Copyright © 2015 Craig Phillips Pty Ltd. All rights reserved.</copyright>
-    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <license>GNU General Public License version 2 or later; see LICENSE</license>
     <authorEmail>support@craigphillips.biz</authorEmail>
     <authorUrl>http://seepeoplesoftware.com</authorUrl>
     <version>##VER## (##COMHASH##)</version>
@@ -12,8 +12,9 @@
     <files>
         <filename module="mod_easygooglecse">mod_easygooglecse.php</filename>
         <folder>tmpl</folder>
-            <filename>index.html</filename>
-            <filename>mod_easygooglecse.xml</filename>
+        <filename>index.html</filename>
+        <filename>LICENSE</filename>
+        <filename>mod_easygooglecse.xml</filename>
         <folder>language</folder>
     </files>
     <config>
