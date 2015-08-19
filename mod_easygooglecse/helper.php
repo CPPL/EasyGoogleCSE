@@ -12,7 +12,9 @@ defined('_JEXEC') or die('Direct Access to ' . basename(__FILE__) . ' is not all
 
 class modEasyGoogleCSEHelper {
 
-    public static function pageURL () {
+    public static function pageURL()
+    {
+        // @todo can we use $uri = JFactory::getURI(); instead?
         $rawURL =  "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         $escapedURL = htmlspecialchars($rawURL, ENT_QUOTES, 'UTF-8');
 
