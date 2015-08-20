@@ -19,5 +19,5 @@ defined('_JEXEC') or die;
 })();
 </script>
 
-<gcse:searchbox-only resultsUrl="<?php echo $resultURL; ?>" enableAutoComplete="true">
+<gcse:searchbox-only resultsUrl="<?php echo $resultURL; ?>" enableAutoComplete="true" autoCompleteMaxCompletions="5" autoCompleteMatchType='any'>
 </div>
