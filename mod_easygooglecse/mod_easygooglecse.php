@@ -20,7 +20,7 @@ $key = $params->get('easygooglecse_key');
 $resultMenuID = $params->get('googleReturnMenuID', false);
 $resultURL = modEasyGoogleCSEHelper::resultURL($resultMenuID, $pageURL);
 
-if ($layout != 'results' && (empty($key) || empty($pageURL)))
+if ($layout != '_:results' && (empty($key) || empty($pageURL)))
 {
     return;
 }

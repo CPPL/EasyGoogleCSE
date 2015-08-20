@@ -15,9 +15,24 @@ class modEasyGoogleCSEHelper {
     public static function pageURL()
     {
         // @todo can we use $uri = JFactory::getURI(); instead?
+        $jURL = JFactory::getURI();
         $rawURL =  "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         $escapedURL = htmlspecialchars($rawURL, ENT_QUOTES, 'UTF-8');
 
         return $escapedURL;
+    }
+
+    public static function resultURL($menuID, $default)
+    {
+        $resultURL = $default;
+
+        $menu = JMenu::getInstance('site');
+        $resultMenuItem = $menu->getItem($menuID);
+
+        if ($resultMenuItem != null && is_object($resultMenuItem) && isset($resultMenuItem->route)) {
+            $resultURL = '/' . JRoute::_($resultMenuItem->route);
+        }
+
+        return $resultURL;
     }
 }
